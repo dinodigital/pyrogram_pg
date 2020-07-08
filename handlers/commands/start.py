@@ -12,4 +12,5 @@ def start(bot: Client, m: Message):
     if user is None:
         user = create_user(m)
 
+    # Первое сообщение пользователю
     bot.send_message(tg_id, 'Hello!')
